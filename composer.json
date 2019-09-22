@@ -1,0 +1,30 @@
+{
+    "name": "elements-ft/kashier-php",
+    "description": "Take credit card payments on your website using Kashier.",
+    "type": "library",
+    "keywords": [
+        "kashier",
+        "payment processing",
+        "api"
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "psr/log": "*"
+    },
+    "authors": [
+        {
+            "name": "Ahmed El-Araby",
+            "email": "araby2305@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "ITeam\\Kashier\\": "src/"
+        }
+    }
+}
