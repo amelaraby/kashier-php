@@ -25,6 +25,7 @@ use ITeam\Kashier\Common\KashierModel;
  * @property string merchantId
  * @property string mid
  * @property string cardToken
+ * @property string ccvToken
  * @property string shopper_reference
  * @property string display
  *
@@ -296,6 +297,25 @@ class CheckoutRequest extends KashierModel
     public function setCardToken($cardToken)
     {
         $this->cardToken = $cardToken;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCcvToken()
+    {
+        return $this->ccvToken;
+    }
+
+    /**
+     * @param string $ccvToken
+     * @return CheckoutRequest
+     */
+    public function setCcvToken($ccvToken)
+    {
+        $this->ccvToken = $ccvToken;
 
         return $this;
     }
